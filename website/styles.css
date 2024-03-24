@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 30px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 24px;
+    margin: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 10px 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#stop-button {
+    display: none;
+    background-color: #dc3545;
+    margin: 0 0 0 168px !important;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.loader {
+    margin-left: 168px !important;
+    border: 8px solid #f3f3f3; /* make the loader smaller */
+    border-radius: 50%;
+    border-top: 8px solid #3498db; /* make the loader smaller */
+    width: 60px; /* make the loader smaller */
+    height: 60px; /* make the loader smaller */
+    animation: spin 2s linear infinite;
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#webcam-container {
+    position: relative;
+    margin-top: 20px;
+}
+
+#label-container {
+    margin-top: 20px;
+}
+
+#label-container div {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
