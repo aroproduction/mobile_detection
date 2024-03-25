@@ -5,6 +5,7 @@ let model, webcam, labelContainer, maxPredictions;
 async function init() {
     document.getElementById("loader").style.display = "block";
     document.getElementById("stop-button").style.display = "block"; // show the stop button
+    document.getElementById("start-button").disabled = true; // disable the start button
     const modelURL = URL + "model.json";
     const metadataURL = URL + "metadata.json";
 
@@ -39,6 +40,7 @@ function stop() {
     document.getElementById("webcam-container").innerHTML = '';
     labelContainer.innerHTML = '';
     document.getElementById("stop-button").style.display = "none"; // hide the stop button
+    document.getElementById("start-button").disabled = false; // enable the start button
 }
 
 async function predict() {
